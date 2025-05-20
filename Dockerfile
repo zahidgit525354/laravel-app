@@ -1,6 +1,6 @@
 # Stage 1: Node for frontend build
-FROM node:18-alpine as frontend
-
+#FROM node:18-alpine as frontend
+FROM node as frontend
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
